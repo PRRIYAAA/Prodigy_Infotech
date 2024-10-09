@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* About Section */
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+}
+
+#about p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background-color: #fff;
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    margin: 10px 0;
+}
+
+.project a {
+    color: #333;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #007bff;
+}
+
+/* Contact Section */
+#contact {
+    padding: 40px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+    }
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #007bff;
+    border-radius: 5px;
+}
+
+/* Sticky Navbar */
+body {
+    padding-top: 60px; /* Prevent content from hiding under navbar */
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .logo a {
+        font-size: 1.3em;
+    }
+}
+
+#luffy {
+    position: relative; /* Make the parent element relative for child positioning */
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0; /* Position the image at the top left */
+    max-height: 250px;  /* Set desired height */
+    border-radius: 50%;
+    width: auto;        /* Maintain aspect ratio */
+    margin: 10px;       /* Add some margin to avoid touching the edges */
+}
+
